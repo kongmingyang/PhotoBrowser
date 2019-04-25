@@ -11,12 +11,17 @@
 
 
 初始化并加载本地图片
+
    ImagePreViewController *preview = [[ImagePreViewController alloc]initWithImages:datas WithIndex:index];
+   
+   
     [self.navigationController pushViewController:preview animated:YES];
     
     
     
 初始化并加载网络图片
+
   ImagePreViewController *preview = [[ImagePreViewController alloc]initWithimgUrl:images WithIndex:tag];
+  
     
     [self.navigationController pushViewController:preview animated:YES];
